@@ -28,7 +28,7 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
         <nav
             className={`${vertical ? "flex flex-col gap-6 text-lg" : "hidden lg:flex items-center gap-10 text-sm"} uppercase tracking-widest`}
         >
-            {links.map((link) => (
+            {link.map((link) => (
                 <Link
                     key={link.path}
                     to={link.path}
