@@ -11,6 +11,16 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
         "Contact",
     ];
 
+    const link = [
+        { label: "Home", path: "/" },
+        { label: "Menu", path: "/menu" },
+        { label: "Reservation", path: "/reservation" },
+        { label: "Gallery", path: "/gallery" },
+        { label: "About", path: "/about" },
+        { label: "Blog", path: "/blog" },
+        { label: "Contact", path: "/contact" },
+    ];
+
     const textColor = color
         ? (color === "black" ? "text-black hover:text-red-500" : "text-white hover:text-red-500")
         : (scrolled ? "text-black hover:text-red-500" : "text-white hover:text-red-500");
@@ -20,12 +30,12 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
         >
             {links.map((link) => (
                 <Link
-                    key={link}
-                    to={`/${link.toLowerCase()}`}
+                    key={link.path}
+                    to={link.path}
                     onClick={onClick}
                     className={`${textColor} transition duration-300`}
                 >
-                    {link}
+                    {link.label}
                 </Link>
             ))}
         </nav>
