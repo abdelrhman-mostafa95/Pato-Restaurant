@@ -12,7 +12,11 @@ export default function HomePage() {
         <>
             <Hero />
             <WelcomeSection />
-            <DiscoverSection />
+            <DiscoverSection
+                image="/bg-intro-01.webp"
+                smallTitle="Discover"
+                mainTitle="PATO PLACE"
+            />
             <FeaturesSection />
             <MenuSection />
             <EventsSection />
