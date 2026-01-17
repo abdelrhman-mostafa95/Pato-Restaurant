@@ -48,20 +48,20 @@ export default function EventsSection() {
 
     return (
         <section
-            className="relative py-32 bg-fixed bg-cover bg-center"
+            className="relative py-16 md:py-32 bg-fixed bg-cover bg-center"
             style={{ backgroundImage: "url('/bg-event-01.webp')" }}
         >
             {/* Overlay */}
-            <div className="absolute inset-0 " />
+            <div className="absolute inset-0 bg-black/40" />
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-6">
 
                 {/* Title */}
-                <div className="text-center mb-16 text-white">
-                    <h4 className="text-red-500 italic tracking-widest mb-4">
+                <div className="text-center mb-12 md:mb-16 text-white">
+                    <h4 className="text-red-500 italic tracking-widest mb-3 md:mb-4 text-base md:text-lg">
                         Upcoming
                     </h4>
-                    <h2 className="text-5xl font-heading font-bold tracking-widest">
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-widest">
                         EVENTS
                     </h2>
                 </div>
