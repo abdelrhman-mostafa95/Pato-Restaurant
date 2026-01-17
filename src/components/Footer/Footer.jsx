@@ -76,11 +76,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <p className="text-sm">
-<<<<<<< HEAD
                         © 2026 Abdelrahman Mostafa. All rights reserved
-=======
-                        © 2026 Abdelrahman Mostafa. Get The Theme
->>>>>>> b139557479d125ef08395c28d2c439299d3f10e9
                     </p>
 
                     {/* Scroll To Top */}
