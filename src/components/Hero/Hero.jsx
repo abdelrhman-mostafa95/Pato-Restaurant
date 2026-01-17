@@ -11,17 +11,17 @@ export default function Hero() {
         {
             image: "/slide1-01.webp",
             title: "Welcome to",
-            subtitle: "Pato Place",
+            subtitle: "PATO PLACE",
         },
         {
             image: "/master-slides-01.webp",
             title: "Welcome to",
-            subtitle: "Pato Place",
+            subtitle: "PATO PLACE",
         },
         {
             image: "/master-slides-02.webp",
             title: "Welcome to",
-            subtitle: "Pato Place",
+            subtitle: "PATO PLACE",
         },
     ];
 
@@ -35,7 +35,7 @@ export default function Hero() {
         >
             {slides.map((slide, index) => (
                 <SwiperSlide key={index}>
-                    <HeroSlider {...slide} />
+                    <HeroSlider {...slide} showButton={true} button={"VIEW MENU"} />
                 </SwiperSlide>
             ))}
         </Swiper>

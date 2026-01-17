@@ -1,30 +1,24 @@
 import './App.css'
-import BlogSection from './components/BlogSection/BlogSection'
-import DiscoverSection from './components/DiscoverSection/DiscoverSection'
-import EventsSection from './components/EventsSection/EventsSection'
-import FeaturesSection from './components/FeaturesSection/FeaturesSection'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/Header/Navbar'
-import Hero from './components/Hero/Hero'
-import MenuSection from './components/MenuSection/MenuSection'
-import ReservationSection from './components/ReservationSection/ReservationSection'
-import WelcomeSection from './components/WelcomeSection/WelcomSection'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MenuPage from './Pages/Menu/MenuPage';
+import HomePage from './Pages/Home/HomePage';
+
+
 
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <WelcomeSection />
-      <DiscoverSection />
-      <FeaturesSection />
-      <MenuSection />
-      <EventsSection />
-      <ReservationSection />
-      <BlogSection />
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/menu" element={<MenuPage />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
+
   )
 }
 

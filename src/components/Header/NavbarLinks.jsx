@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function NavbarLinks({ vertical = false, onClick, scrolled = false, color }) {
     const links = [
         "Home",
@@ -9,7 +11,6 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
         "Contact",
     ];
 
-    // إذا في color محدد (من الموبايل)، استخدمه، وإلا استخدم scrolled
     const textColor = color
         ? (color === "black" ? "text-black hover:text-red-500" : "text-white hover:text-red-500")
         : (scrolled ? "text-black hover:text-red-500" : "text-white hover:text-red-500");
@@ -18,12 +19,14 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
             className={`${vertical ? "flex flex-col gap-6 text-lg" : "hidden lg:flex items-center gap-10 text-sm"} uppercase tracking-widest`}
         >
             {links.map((link) => (
-                <a
+                <Link
                     key={link}
+                    to={`/${link.toLowerCase()}`}
                     onClick={onClick}
-                    href="#"
                     className={`${textColor} transition duration-300`}
-                >{link}</a>
+                >
+                    {link}
+                </Link>
             ))}
         </nav>
     )

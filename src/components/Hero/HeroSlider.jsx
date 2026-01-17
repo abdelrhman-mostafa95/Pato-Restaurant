@@ -1,14 +1,24 @@
 import { motion } from "framer-motion";
 
-export default function HeroSlider({ image, title, subtitle }) {
+export default function HeroSlider({
+    image,
+    title,
+    subtitle,
+    button,
+    height = "100vh",
+    showButton = true,
+}) {
     return (
         <div
-            className="h-screen w-full bg-cover bg-center relative"
-            style={{ backgroundImage: `url(${image})` }}
+            className="w-full bg-cover bg-center relative"
+            style={{
+                backgroundImage: `url(${image})`,
+                height: height,
+            }}
         >
-            {/* Vignette Overlay */}
-            <div className="absolute inset-0 bg-black/40" />
-            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/70" />
+            {/* Overlays */}
+            <div className="absolute inset-0 " />
+            <div className="absolute inset-0 " />
 
             {/* Content */}
             <div className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6">
@@ -34,22 +44,24 @@ export default function HeroSlider({ image, title, subtitle }) {
                 </motion.h1>
 
                 {/* Button */}
-                <motion.button
-                    animate={{
-                        boxShadow: [
-                            "0 0 0px rgba(246, 14, 14, 0.4)",
-                            "0 0 20px rgba(246, 16, 16, 0.8)",
-                            "0 0 0px rgba(251, 12, 12, 0.4)",
-                        ],
-                    }}
-                    transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                    }}
-                    className="px-12 py-4 rounded-full border-2 border-red-500 hover:bg-red-900 hover:text-white transition tracking-widest"
-                >
-                    VIEW MENU
-                </motion.button>
+                {showButton && (
+                    <motion.button
+                        animate={{
+                            boxShadow: [
+                                "0 0 0px rgba(246, 14, 14, 0.4)",
+                                "0 0 20px rgba(246, 16, 16, 0.8)",
+                                "0 0 0px rgba(251, 12, 12, 0.4)",
+                            ],
+                        }}
+                        transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                        }}
+                        className="px-12 py-4 rounded-full border-2 border-red-500 hover:bg-red-900 hover:text-white transition tracking-widest"
+                    >
+                        {button}
+                    </motion.button>
+                )}
             </div>
         </div>
     );
