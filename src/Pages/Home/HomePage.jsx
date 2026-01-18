@@ -12,7 +12,13 @@ export default function HomePage() {
     return (
         <>
             <Hero />
-            <WelcomeSection />
+            <WelcomeSection
+                smallTitle="Egyptian Restaurant"
+                title="WELCOME"
+                description="Experience the authentic taste of Egypt in an elegant and welcoming atmosphere. From traditional recipes to modern flavors, we bring you a unique dining journey inspired by Egyptian heritage."
+                buttonText="Our Story"
+                image="/our-story-01.webp"
+            />
             <DiscoverSection
                 image="/bg-intro-01.webp"
                 smallTitle="Discover"

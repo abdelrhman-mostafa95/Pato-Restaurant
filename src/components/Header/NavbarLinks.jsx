@@ -8,7 +8,7 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
         "Gallery",
         "About",
         "Blog",
-        "Contact",
+
     ];
 
     const link = [
@@ -18,7 +18,7 @@ export default function NavbarLinks({ vertical = false, onClick, scrolled = fals
         { label: "Gallery", path: "/gallery" },
         { label: "About", path: "/about" },
         { label: "Blog", path: "/blog" },
-        { label: "Contact", path: "/contact" },
+
     ];
 
     const textColor = color
