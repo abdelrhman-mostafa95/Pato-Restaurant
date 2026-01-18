@@ -1,9 +1,10 @@
-import DiscoverSection from "../../components/DiscoverSection/DiscoverSection";
-import EgyptianMenuSection from "../../components/EgyptianMenuSection/EgyptianMenuSection";
-import HeroSlider from "../../components/Hero/HeroSlider";
-import MenuPriceSection from "../../components/MenuPriceSection/MenuPriceSection";
-import { lunchMenu, dinnerMenu } from "../../components/EgyptianMenuSection/data/menuData";
-import SpecialSignupSection from "../../components/SpecialSignupSection/SpecialSignupSection";
+import DiscoverSection from "../../components/HomeComponents/DiscoverSection/DiscoverSection";
+import HeroSlider from "../../components/HomeComponents/Hero/HeroSlider";
+import EgyptianMenuSection from "../../components/MenuComponents/EgyptianMenuSection/EgyptianMenuSection";
+import MenuPriceSection from "../../components/MenuComponents/MenuPriceSection/MenuPriceSection";
+import SpecialSignupSection from "../../components/MenuComponents/SpecialSignupSection/SpecialSignupSection";
+import { lunchMenu, dinnerMenu } from "../../components/MenuComponents/EgyptianMenuSection/data/menuData";
+
 
 export default function MenuPage() {
     return (

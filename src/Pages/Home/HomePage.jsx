@@ -1,11 +1,12 @@
-import BlogSection from "../../components/BlogSection/BlogSection";
-import DiscoverSection from "../../components/DiscoverSection/DiscoverSection";
-import EventsSection from "../../components/EventsSection/EventsSection";
-import FeaturesSection from "../../components/FeaturesSection/FeaturesSection";
-import Hero from "../../components/Hero/Hero";
-import MenuSection from "../../components/MenuSection/MenuSection";
-import ReservationSection from "../../components/ReservationSection/ReservationSection";
-import WelcomeSection from "../../components/WelcomeSection/WelcomSection";
+import BlogSection from "../../components/HomeComponents/BlogSection/BlogSection";
+import DiscoverSection from "../../components/HomeComponents/DiscoverSection/DiscoverSection";
+import EventsSection from "../../components/HomeComponents/EventsSection/EventsSection";
+import FeaturesSection from "../../components/HomeComponents/FeaturesSection/FeaturesSection";
+import Hero from "../../components/HomeComponents/Hero/Hero";
+import MenuSection from "../../components/MenuComponents/MenuSection/MenuSection";
+import ReservationSection from "../../components/HomeComponents/ReservationSection/ReservationSection";
+import WelcomeSection from "../../components/HomeComponents/WelcomeSection/WelcomSection";
+
 
 export default function HomePage() {
     return (

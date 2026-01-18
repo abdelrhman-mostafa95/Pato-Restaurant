@@ -24,7 +24,7 @@ export default function EventsSection() {
             image: "/event-02.webp",
             date: "09 PM | Friday",
             title: "Live Music & Dinner",
-            desc: "Enjoy live music with delicious meals every Friday.",
+            desc: "Enjoy live music with delicious meals in Friday.",
             countdown: [
                 { value: 10, label: "Days" },
                 { value: 5, label: "Hours" },

@@ -4,6 +4,7 @@ import Navbar from './components/Header/Navbar'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MenuPage from './Pages/Menu/MenuPage';
 import HomePage from './Pages/Home/HomePage';
+import ReservationPage from './Pages/Reservation/ReservationPage';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/menu" element={<MenuPage />} />
+        <Route path="/reservation" element={<ReservationPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
