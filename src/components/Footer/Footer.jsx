@@ -14,7 +14,6 @@ export default function Footer() {
                     <ul className="space-y-4 text-sm">
                         <li>📍 Cairo, Egypt</li>
                         <li>📞 (+20) 10 2945 4138</li>
-                        <li>✉ abdelrhman.mostafa95@gmail.com</li>
                     </ul>
 
                     <div className="mt-12">
@@ -31,12 +30,10 @@ export default function Footer() {
                     <div className="space-y-10 text-sm">
 
                         <div>
-                            <p className="text-red-500 mb-2">@Abdelrahman</p>
                             <p>
                                 Activello is a good option. It has a slider built into that
                                 displays the featured image in the slider.
                             </p>
-                            <a href="#" className="text-red-500">https://github.com/abdelrhman-mostafa95</a>
                             <p className="mt-2 text-xs">20 Jan 2026</p>
                         </div>
 
@@ -76,7 +73,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <p className="text-sm">
-                        © 2026 Abdelrahman Mostafa. All rights reserved
+                        © 2026 Abdelrahman Mostafa & Omar Muhammed . All rights reserved
                     </p>
 
                     {/* Scroll To Top */}
